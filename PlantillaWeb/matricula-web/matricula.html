@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos de Algoritmos</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1d3557, #457b9d);
+      color: #f1faee;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: rgba(0,0,0,0.2);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #f1faee;
+      letter-spacing: 1px;
+      animation: fadeInDown 1.2s ease;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .card {
+      max-width: 800px;
+      background: rgba(255,255,255,0.1);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      text-align: justify;
+      line-height: 1.6;
+      font-size: 1.1rem;
+      color: #f1faee;
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0,0,0,0.3);
+      font-size: 1rem;
+      font-weight: 500;
+      color: #a8dadc;
+      letter-spacing: 0.5px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    /* Animación */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenidos al curso de POO</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      Al finalizar el curso, el estudiante desarrolla e implementa casos 
+      haciendo uso de herramientas de análisis, diagramación y de las 
+      diversas estructuras en un lenguaje de programación de alto nivel, 
+      demostrando lógica, legibilidad y buenas prácticas para analizar 
+      problemas, causas y posibles soluciones.
+    </div>
+  </main>
+
+  <footer>
+    Universidad Privada del Norte
+  </footer>
+</body>
+</html>
